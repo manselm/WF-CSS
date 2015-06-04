@@ -839,6 +839,7 @@ footer div:last-child {
 .modal-header {
 	background:#ae2573;	
 }
+
 .modal-content .modal-header {
 	border-bottom:none;	
 	min-height:67px;
@@ -908,6 +909,15 @@ footer div:last-child {
 
 .modal-footer .media-left img {
 	width:60px;	
+}
+
+#language .modal-body,
+#timeout_prompt .modal-body {
+	padding:30px;	
+}
+
+#timeout_prompt .modal-footer {
+	text-align:center;	
 }
 
 /* Learn More Modal */
