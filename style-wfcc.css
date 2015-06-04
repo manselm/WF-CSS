@@ -158,7 +158,8 @@ input:focus {
 }
 
 #global_navigation ul li a {
-	border-right:1px solid #000;			
+	border-right:1px solid #000;	
+	cursor:default;		
 }
 
 #global_navigation ul>li>a:focus
