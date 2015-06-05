@@ -479,6 +479,7 @@ input#search {
 .tiles .col-md-4 {
 	padding-left:8px;
 	padding-right:8px;	
+	position:relative;
 }
 
 .center {
@@ -584,13 +585,13 @@ a.star.active {
 /* Expires Soon */
 
 span.expires {
-	position:relative;
-	top:55px;
+	position:absolute;
+	top:33px;
 	font-size:0.833em;
 	color:#ae2573;
 	height:0px;
 	text-align:left;	
-	left:8px;
+	left:23px;
 }
 
 /* Online/In-Store */
