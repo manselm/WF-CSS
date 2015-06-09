@@ -1039,6 +1039,32 @@ footer div:last-child {
 	display:block;
 }
 
+/* Terms Modal */
+
+#terms_modal .georgia {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:20px;
+}
+
+#terms_modal .modal-footer {
+	padding-left:14px;
+	padding-right:14px;	
+}
+
+#terms_modal .modal-footer .terms_collapse {
+	color:#44464a;
+	padding-right:32px;
+	background:url(|IMAGESRC|/faq_arrow_up.png) center right no-repeat;	
+}
+
+#terms_modal .modal-footer .terms_collapse.collapsed {
+	background:url(|IMAGESRC|/faq_arrow_down.png) center right no-repeat;	
+}
+
+#terms_modal .modal-footer #terms_article {
+	color:#000;	
+}
+
 #online_offer_back .btn-back {
 	background:url(|IMAGESRC|/back_arrow.png) top left no-repeat;
 	display:block;
