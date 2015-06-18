@@ -433,6 +433,12 @@ box-shadow: 0 5px 5px 0 #AFB0b0;}
 	padding-top:16px;	
 }
 
+/* Non Auth Targeted Pane */
+
+.anon #offers1 .nav-tabs {
+	width:225px;	
+}
+
 /* Recommended, Activated, Favorites */
 
 #offers1 .tab-pane p {
@@ -449,6 +455,11 @@ box-shadow: 0 5px 5px 0 #AFB0b0;}
 }
 
 /* Search Input */
+
+#search_group input:focus {
+	outline:none;
+	border-color:#CFD1D7;	
+}
 
 input.search,
 #search_group .btn,
@@ -495,7 +506,6 @@ input.search {
 }
 .ui-widget-header {
 	border: 1px solid #aaaaaa;
-	background: #cccccc url("images/ui-bg_highlight-soft_75_cccccc_1x100.png") 50% 50% repeat-x;
 	color: #222222;
 	font-weight: bold;
 }
@@ -680,6 +690,19 @@ span.expires {
 	height:0px;
 	text-align:left;	
 	left:23px;
+}
+
+/* In-Store Anon */
+
+.anon #offers2 #instore #filters,
+.anon #offers2 #instore ul.in-store_sort_by {
+	display:none;	
+}
+
+.anon #offers2 #instore #instoreOffersContainer .col-md-9 {
+	margin-top:60px;
+	margin-left:225px;
+	min-height:700px;	
 }
 
 /* Online/In-Store */
@@ -1499,6 +1522,11 @@ input#search {
 .navbar-inverse {
 	border-top:4px solid #bb0826;
 }
+.anon #offers2 #instore #instoreOffersContainer .col-md-9 {
+	min-height:400px;
+	margin-top:40px;
+}
+
 }
 
 /* Mobile Media Queries */
