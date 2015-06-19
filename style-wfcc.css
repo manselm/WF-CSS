@@ -327,6 +327,9 @@ box-shadow: 0 5px 5px 0 #AFB0b0;}
 
 /* Hero Banners */
 
+.anon #hero {
+	margin-top:100px;	
+}
 
 #hero {
 	height:725px;
