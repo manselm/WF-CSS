@@ -337,7 +337,7 @@ box-shadow: 0 5px 5px 0 #AFB0b0;}
 
 #hero {
 	height:725px;
-	margin-top:132px;
+	margin-top:149px;
 }
 
 .slides-navigation a.prev {
@@ -593,6 +593,7 @@ input.search {
 	padding-left:8px;
 	padding-right:8px;	
 	position:relative;
+	margin-bottom:20px;
 }
 
 .center {
@@ -662,7 +663,12 @@ input.search {
 }
 
 .tile .bottom_section .retailer_name {
-	font-weight:bold;	
+	font-weight:bold;
+	width: 225px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;	
+	display:block;
 }
 
 #offers1 .tile .center {
@@ -690,6 +696,7 @@ a.star {
 	xmargin-right:6px;	
 }
 
+
 a.star.active {
 	background:url(|IMAGESRC|/star_bg_active.png) top left no-repeat;	
 }
@@ -698,13 +705,20 @@ a.star.active {
 
 span.expires {
 	position:absolute;
-	top:33px;
 	font-size:0.833em;
 	color:#ae2573;
 	height:0px;
 	text-align:left;	
-	left:23px;
+	top:12px;
 }
+
+#offers1 span.expires {
+	left:14px;
+}
+
+#offers2 span.expires {
+	left:23px;
+}	
 
 /* In-Store Anon */
 
@@ -733,9 +747,13 @@ span.expires {
 	xmargin-left:30px;	
 }
 
+#offers2 span.shoptype {
+	display:none;
+}	
+
 #offers2 #filters {
 	background-color:#f9f9f9;
-	margin-top:21px;
+	xmargin-top:21px;
 	width:255px;
 	margin-left:-22px;
 }
@@ -817,7 +835,7 @@ a.btn-map {
 }
 
 .sort_by span.selectboxit-container {
-	margin-top:-8px;
+	margin-top:-31px;
 	margin-right:-13px;
 }
 
@@ -1280,7 +1298,7 @@ footer div:last-child {
 }
 
 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
-	bottom:-58px;	
+	bottom:-47px;	
 }
 
 .bx-wrapper .bx-controls-direction a {
@@ -2028,6 +2046,7 @@ input#search {
 
 .tile .bottom_section .retailer_name {
 	font-weight:bold;
+	width: 130px;
 }
 
 #show_more .btn {
