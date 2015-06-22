@@ -39,6 +39,10 @@ body {
 	display:none;	
 }
 
+.navmenu-fixed-left, .navmenu-fixed-right, .navbar-offcanvas {
+	z-index:1040 !important;	
+}
+
 .well h2 {
 	margin-top:0px;
 }
@@ -657,6 +661,10 @@ input.search {
 	padding:16px 0px;
 }
 
+.tile .bottom_section .retailer_name {
+	font-weight:bold;	
+}
+
 #offers1 .tile .center {
     height: 126px;
 }
@@ -680,11 +688,6 @@ a.star {
 #offers1 a.star {
 	xfloat:right;
 	xmargin-right:6px;	
-}
-
-#offers2 a.star {
-	left:86%;
-	top:30px;
 }
 
 a.star.active {
@@ -1383,6 +1386,11 @@ footer div:last-child {
 	padding-left:36px;	
 }
 
+.tile .bottom_section {
+	font-size:0.938em;
+}
+
+
 }
 
 /* Tablet Media Queries */
@@ -1874,7 +1882,8 @@ input#search {
 }
 
 #offers2 #btn_refine {
-	padding-right:8px;
+	margin-right:8px;
+	height:51px;
 }
 
 /* Bxslider */
@@ -2006,6 +2015,7 @@ input#search {
 	xbottom:20px;	
 	display:block;
 	padding:12px 0px;
+	font-size:1em;
 }
 
 .tile .bottom_section p {
@@ -2024,20 +2034,28 @@ input#search {
 	margin-top:16px;	
 }
 
+span.expires {
+	top:22px;
+	left:17px;	
+}
+
 /* Stars */
 
-a.star {
+a.star,
+a.star.active {
 	background-size:16px 15px;
 	width:16px;
 	height:15px;
 }
+
+
 
 #offer1 a.star {
 	float:right;
 	margin-right:6px;	
 }
 
-#offer2 a.star {
+a.star {
 	top:22px;
 	left:87%;
 }
