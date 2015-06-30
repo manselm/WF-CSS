@@ -55,6 +55,10 @@ input:focus {
 	outline:none;
 }
 
+.programname {
+	font-style:italic;	
+}
+
 .btn {
 	border-radius:2px;
 	padding-top:7px;
@@ -471,6 +475,11 @@ box-shadow: 0 5px 5px 0 #AFB0b0;}
 	outline:none;
 	border-color:#CFD1D7;
 	box-shadow:none;	
+}
+
+#search-refine .input-group-btn .btn img {
+	height:17px;
+	width:17px;	
 }
 
 input.search,
@@ -1100,6 +1109,10 @@ footer div:last-child {
 	text-align:center;	
 }
 
+.modal-body p a {
+	text-decoration:underline;	
+}
+
 /* Learn More Modal */
 
 #hiw_lb .media {
@@ -1223,7 +1236,7 @@ footer div:last-child {
 	color:#000;	
 }
 
-#online_offer_back .btn-back {
+#wfccmodal .btn-back {
 	background:url(|IMAGESRC|/back_arrow.png) top left no-repeat;
 	display:block;
 	padding-left:26px;	
