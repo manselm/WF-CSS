@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
+
 body {
 	background:#f3f4f3;
 }
@@ -8,6 +9,15 @@ body {
 *:focus {
 	outline:1px dotted #CCC;
 }
+
+.phoneno {
+	white-space:nowrap;	
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* Firefox 18- */
+input:focus::-moz-placeholder { color:transparent; } /* Firefox 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
 
 #top-link-block.affix-top {
     position: absolute; /* allows it to "slide" up into view */
@@ -209,7 +219,9 @@ input:focus {
 	padding-left:0px;
 	padding-right:0px;
 }
-#global_navigation .nav > li.dropdown.open .dropdown-menu {display:table; width: 100%; text-align: center; left:0; right:0; border:none; -webkit-box-shadow: 0 5px 5px 0 #AFB0b0;
+#global_navigation .nav > li.dropdown.open .dropdown-menu {display:table; width: 100%; text-align: center; left:0; right:0; 
+
+border:none; -webkit-box-shadow: 0 5px 5px 0 #AFB0b0;
 box-shadow: 0 5px 5px 0 #AFB0b0;}
 #global_navigation .dropdown-menu>li { 
 	display: table-cell;
@@ -350,7 +362,7 @@ box-shadow: 0 5px 5px 0 #AFB0b0;}
 
 #hero {
 	height:725px;
-	margin-top:149px;
+	margin-top:144px;
 }
 
 .slides-navigation a.prev {
@@ -366,11 +378,56 @@ box-shadow: 0 5px 5px 0 #AFB0b0;}
 	display:table;	
 }
 
+#hero .container p.earn-more-mall {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  color: #bb0826;	
+}
+
 #hero .container h1,
 #hero .container p {
 	margin-left:24px;
 	width:60%;
 }
+
+#hero .container div.merchant_logos {margin-left:24px;}
+#hero .container ul {margin:0;padding:0;list-style:none;}
+#hero .container ul li {float:left;margin-right:15px;margin-bottom:15px;}
+
+#hero .slides-container li img {
+	top:0px !important;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff
+
++0,f3f4f3+100&0+0,1+100 */
+
+background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(243,244,243,1) 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba
+
+(243,244,243,1))); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(243,244,243,1) 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(243,244,243,1) 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(243,244,243,1) 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(243,244,243,1) 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#f3f4f3',GradientType=0 ); /* 
+
+IE6-9 */
+
+	
+}
+
+#hero .container img.retailer_img {
+max-width:90px !important;
+max-height:50px !important;
+position:inherit !important;
+opacity:1 !important;
+}
+
 
 /* Main Content */
 
@@ -680,6 +737,8 @@ input.search:-ms-input-placeholder {
 .center .v-align a .no_logo {
 	padding:	0px 8px;
 	display:block;
+	xwhite-space:nowrap;
+	
 }
 
 .tooltip.in {
@@ -876,24 +935,25 @@ span.expires {
 
 /* Edit Zip Location */
 
-#location_edit {
+.location_edit {
 	width:292px;
 	display:inline-block;
 	vertical-align:top;
-	marginm-top:-9px;	
+	margin-top:-9px;	
 }
 
-#location_edit input,
-#location_edit input:focus {
+.location_edit input,
+.location_edit input:focus {
 	border:0px;
 	outline:0px;
 	box-shadow:inset 0px 0px 0px rgba(0,0,0,0.075);	
-	width:80px;
+	width:80px !important;
 }
 
-#location_edit .input-group-addon {
+.location_edit .input-group-addon {
 	border:0px;
 	background-color:#FFF;	
+	cursor:pointer;
 }
 
 a.btn-map {
@@ -904,6 +964,111 @@ a.btn-map {
 	padding-left:30px;
 	line-height:34px;
 	margin:16px 8px 0px 0px;	
+}
+
+/* Map View */
+
+.pushpin {
+	border:3px solid white !important;
+	text-align:center;
+	padding:20px 10px;
+	width:215px !important;
+	color:#FFF;
+	font-size:22px;	
+	white-space:nowrap;
+	overflow:hidden;
+	display:block;
+	text-overflow:ellipsis;
+	height:60px !important;
+	line-height:14px;
+	font-weight:bold;
+	background:#ae2573 !important;
+	-webkit-box-shadow: 7px -3px 10px 3px rgba(102,102,102,0.21);
+-moz-box-shadow: 7px -3px 10px 3px rgba(102,102,102,0.21);
+box-shadow: 7px -3px 10px 3px rgba(102,102,102,0.21);
+}
+
+#myMap .map_carat {
+	background:url(|IMAGESRC|/map_carat.png) center center no-repeat;
+	height:17px;
+	width:20px;
+	display:block;
+	margin-left:90px;
+	-webkit-box-shadow: 56px -32px 10px 9px rgba(102,102,102,0.21);
+-moz-box-shadow: 56px -32px 10px 9px rgba(102,102,102,0.21);
+box-shadow: 56px -32px 10px 9px rgba(102,102,102,0.21);
+}
+
+.infobox {
+	width:225px !important;	
+	height:279px !important;
+	text-align:center !important;
+}
+
+.MicrosoftMap .infobox .infobox-title {
+	margin-right:0px !important;	
+}
+
+.infobox .infobox-close {
+	display:none;	
+}
+
+.infobox {
+	xpadding:22px 10px 14px !important;
+	background:#fafbfa !important;
+	border-color:#c8c7cc !important;	
+}
+
+.infobox .logo {
+	padding:10px 0px;
+	background:#FFF;	
+	margin-bottom:24px;
+}
+
+.infobox .logo img {
+	max-width:170px;	
+}
+
+.infobox .offer,
+.infobox .retailer,
+.infobox .address {
+	color:#44464a !important;
+}
+
+.infobox .retailer {
+	font-size:0.938em;
+	font-weight:bold;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	max-width:220px;
+	margin:0px auto 16px;	
+}
+
+.infobox .offer {
+	font-size:1.125em;	
+	margin-bottom:16px;
+}
+
+.infobox .address {
+	font-size:0.813em;
+	font-style:normal !important;
+	margin-bottom:20px;	
+}
+
+.infobox a {
+	float:none !important;
+	color: #ae2573;
+  	border:2px solid #ae2573;
+	border-radius:2px;
+	padding:6px 12px;
+	line-height:1.42857143;	
+	font-size:18px;
+	xdisplay:block;
+}
+
+#moremapview {
+	
 }
 
 #show_more .btn {
@@ -921,6 +1086,10 @@ a.btn-map {
 
 .anon .sort_by {
 	margin-bottom:16px;
+}
+
+.sort_by li {
+	vertical-align:middle;	
 }
 
 .sort_by {
@@ -1166,6 +1335,10 @@ footer div:last-child {
 	text-decoration:underline;	
 }
 
+.modal-body p a.btn {
+	text-decoration:none;	
+}
+
 /* Learn More Modal */
 
 #wfccmodal .media {
@@ -1202,6 +1375,10 @@ footer div:last-child {
   margin: 20px 0px;
   padding-right: 27px;
   text-decoration: none;
+}
+
+.modal#terms_modal td {
+	padding:10px;	
 }
 
 /* Refine Modal */
@@ -1278,32 +1455,32 @@ footer div:last-child {
 
 /* Terms Modal */
 
-#terms_modal .georgia {
+#wfccmodal .georgia {
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:20px;
 }
 
-#terms_modal .modal-body {
+#wfccmodal .modal-body {
 	height:525px;
 	overflow-y:auto;
 }
 
-#terms_modal .modal-footer {
+#wfccmodal .modal-footer {
 	padding-left:14px;
 	padding-right:14px;	
 }
 
-#terms_modal .modal-footer .terms_collapse {
+#wfccmodal .modal-footer .terms_collapse {
 	color:#44464a;
 	padding-right:32px;
 	background:url(|IMAGESRC|/faq_arrow_up.png) center right no-repeat;	
 }
 
-#terms_modal .modal-footer .terms_collapse.collapsed {
+#wfccmodal .modal-footer .terms_collapse.collapsed {
 	background:url(|IMAGESRC|/faq_arrow_down.png) center right no-repeat;	
 }
 
-#terms_modal .modal-footer #terms_article {
+#wfccmodal .modal-footer #terms_article {
 	color:#000;	
 }
 
@@ -1339,7 +1516,7 @@ footer div:last-child {
 }
 
 #hero .container {
-	margin-top:7%;
+	margin-top:4%;
 }
 
 #hero h1 {
@@ -1387,7 +1564,7 @@ footer div:last-child {
 }
 
 .center .v-align a .no_logo {
-	font-size:22px !important;
+	font-size:17px !important;
 }
 
 .nav-tabs>li {
@@ -1431,6 +1608,12 @@ footer div:last-child {
 	min-height:700px;	
 }
 
+}
+.seemoreoffers
+{
+    float: left;
+	padding:0px 16px;
+	width:100%;
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1365px) { 
@@ -1589,7 +1772,7 @@ nav.navbar {
 }
 
 #hero .container {
-	margin-top:20%;	
+	margin-top:10%;	
 }
 
 .slides-pagination,
@@ -1699,6 +1882,14 @@ nav.navbar {
 	margin-top:22px;	
 }
 
+.slides-navigation a.next {
+	right:43%;
+}
+
+.slides-navigation a.prev {
+	left:43%;
+}
+
 .sliderModal .row.retailer_row {
 	padding:10px 0px;	
 }
@@ -1732,6 +1923,10 @@ nav.navbar {
 	width:49%;	
 }
 
+#offers2 .tab-pane .row.hidden-xs {
+	display:none;	
+}
+
 .nav-tabs>li.active {
 	border-bottom:8px solid #AE257B;	
 }
@@ -1745,7 +1940,7 @@ input#search {
 }
 
 #offers2 #search-refine {
-	width:46%;
+	width:56%;
 	float:right;	
 }
 
@@ -1769,6 +1964,10 @@ input#search {
 	width:95%;	
 }
 
+.nav-tabs>li>a, .nav-tabs>li>a:hover, .nav-tabs>li>a:focus {
+	width:auto;	
+}
+
 #offers1 .col-xs-12.col-md-4 {
 	text-align:center;	
 }
@@ -1786,6 +1985,10 @@ input.search {
 	margin-top:40px;
 }
 
+.location_edit {
+	margin-top:20px;	
+}
+
 .sort_by .dropdown_label {
 	vertical-align:bottom;	
 }
@@ -1800,6 +2003,16 @@ input.search {
 
 .bx-controls-direction {
 	display:none;	
+}
+
+/* Map View */
+
+.pushpin {
+	padding:20px 16px;
+	width:140px !important;
+	font-size:14px;	
+	height:42px !important;
+	line-height:1px;
 }
 
 }
@@ -2082,7 +2295,7 @@ h2, h3 {
 }
 
 .slides-pagination {
-	bottom:12%;	
+	bottom:0%;	
 }
 
 .slides-navigation a.prev {
@@ -2092,6 +2305,26 @@ h2, h3 {
 .slides-navigation a.next {
 	right:30%;
 }
+
+#hero .container ul {margin:0 auto;padding:0;list-style:none;}
+#hero .container ul {margin:0;padding:0;list-style:none;text-align:center;}
+#hero .container ul li {float:left;margin-right:15px;}
+
+#hero .container ul {
+  margin: 20px 0 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+#hero .container .vertical-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#hero .container p>.btn {
+  margin-top: 10px;
+}
+
 /* Main Content */
 
 #main_content {
@@ -2114,6 +2347,8 @@ h2, h3 {
 
 /* Offer Areas */
 
+
+
 #offers1,
 #offers2 {
 	padding-right:0px;
@@ -2122,7 +2357,9 @@ h2, h3 {
 
 
 #offers2 .in-store_sort_by li:first-child {
-	display:none;	
+	xdisplay:none;
+	width:252px;
+	vertical-align:bottom;	
 }
 
 #offers1 h2,
@@ -2158,6 +2395,18 @@ input#search {
 
 .anon #offers2 .col-md-9 {
 	margin-top:16px;
+}
+
+#offers2 .form-inline .form-group {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+#offers2 .form-inline .input-group {
+  display: inline-table;
+  vertical-align: middle;
+	width:56px;
 }
 
 /* Bxslider */
@@ -2267,8 +2516,16 @@ input#search {
 	padding-right:8px;	
 }
 
-#no_offers a {
+#no_offers a
+#moremapview {
 	font-size:1.500em;	
+}
+
+#moremapview {
+	display:block;
+	margin:16px auto 0px;
+	text-align:center;
+	width:auto;	
 }
 
 #offers2 .tab-pane {
@@ -2343,6 +2600,12 @@ a.star.active {
 a.star {
 	top:22px;
 	left:87%;
+}
+
+/* Map View */
+
+.infobox {
+	xheight:230px !important;
 }
 
 /* Footer */
