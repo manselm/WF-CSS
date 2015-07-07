@@ -576,6 +576,7 @@ input.search {
 	border-radius:2px;
 	border-right:0px;
 	box-shadow:none;
+	-webkit-appearance: none;
 }
 
 #search_group .btn,
@@ -981,7 +982,7 @@ a.btn-map {
 	background:url(|IMAGESRC|/map.jpg) top left no-repeat;
 	padding-left:30px;
 	line-height:34px;
-	margin:16px 8px 0px 0px;	
+	xmargin:16px 8px 0px 0px;	
 }
 
 /* Map View */
@@ -1164,7 +1165,8 @@ a.btn-grid {
 	background:url(|IMAGESRC|/grid_view.png) top left no-repeat;
 	padding-left:30px;
 	line-height:20px;
-	margin:0px 8px -3px 64px;	
+	xmargin:0px 0px 16px 0px;	
+	float:none !important;
 }
 
 #in_store .row.in-store_list:last-child {
@@ -1643,6 +1645,10 @@ footer div:last-child {
 	min-height:700px;	
 }
 
+.in-store_sort_by {
+	margin-top:16px;	
+}
+
 }
 .seemoreoffers
 {
@@ -2040,7 +2046,7 @@ input.search {
 }
 
 .location_edit {
-	margin-top:20px;	
+	margin:16px 0px 0px 8px;	
 }
 
 .sort_by .dropdown_label {
@@ -2572,6 +2578,19 @@ input#search {
 #offers1 .bx-viewport {
 	padding-left:8px;
 	padding-right:8px;	
+}
+
+#gridviewoptions .in-store_sort_by li:last-child {
+	margin-left:8px;
+}
+
+#mapviewoptions .in-store_sort_by li:last-child {
+	float:right;
+}
+
+.location_edit input, .location_edit input:focus {
+	font-size:13px;	
+	width:67px !important;
 }
 
 #no_offers a
