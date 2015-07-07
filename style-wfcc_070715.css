@@ -693,7 +693,7 @@ input.search:-ms-input-placeholder {
 }
 
 #offers1 .tile .bottom_section {
-	height:132px;	
+	height:150px;	
 }
 
 
@@ -956,8 +956,8 @@ span.expires {
 .location_edit {
 	width:292px;
 	display:inline-block;
-	vertical-align:baseline;
-	xmargin-top:-9px;	
+	vertical-align:top;
+	margin-top:-9px;	
 }
 
 .location_edit input,
@@ -2496,8 +2496,8 @@ input#search {
 
 /* Tabs */
 .tab-pane {
-	padding:0px;
-	margin-top:10px;
+	xpadding:1px 0px 0px;
+	xmargin-top:-3px;
 }
 
 #offers2 .nav-tabs {
@@ -2569,6 +2569,13 @@ input#search {
 	width:50%;	
 }
 
+#offers1 #favorites p {
+	xpadding:16px;
+	xfont-size:1.7em;
+	xmargin-bottom:0px;
+	xtext-align:center;	
+}
+
 #offers1 .bx-viewport {
 	padding-left:8px;
 	padding-right:8px;	
@@ -2617,18 +2624,12 @@ input#search {
 	height:111px;
 }
 
-#offers1 .tile {
-	height:266px;	
+.tile .bottom_section p {
+	margin-bottom:12px;	
 }
 
-#offers.tile .bottom_section p,
-#offers1 .tile .bottom_section .offer,
-#offers1 .tab-pane p {
-	margin-bottom:8px;	
-}
-
-#offers2 .tile .bottom_section {
-	height:126px;	
+.tile .bottom_section .offer {
+	margin:0px;
 }
 
 .tile .bottom_section .retailer_name {
