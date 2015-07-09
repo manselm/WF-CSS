@@ -132,7 +132,7 @@ input:focus {
 	padding-right:20px;
 	background:url(|IMAGESRC|/activated_check.png) no-repeat;
 	cursor:default;	
-	background-position:135px 8px;
+	background-position:133px 8px;
 	font-weight:bold;
 }
 
@@ -2092,10 +2092,14 @@ input.search {
 }
 
 .location_edit {
-	margin:16px 0px 0px 8px;	
+	xmargin:16px 0px 0px 8px;	
 }
 
 .sort_by .dropdown_label {
+	vertical-align:bottom;	
+}
+
+#gridviewoptions .in-store_sort_by li:first-child {
 	vertical-align:bottom;	
 }
 
@@ -2197,7 +2201,7 @@ h2, h3 {
 
 .btn.activated {
 	background-image:url(|IMAGESRC|/activated_check_mobile.png);
-	background-position:right 12px;	
+	background-position:70% 12px;	
 }
 
 .btn-lg {
@@ -2742,6 +2746,11 @@ a.star {
 	left:87%;
 }
 
+.modal-content .retailer_name a.star {
+	margin-left:12px;	
+}
+
+
 /* Map View */
 
 .infobox {
@@ -2792,12 +2801,21 @@ footer div:last-child {
 	text-align:center;	
 }
 
+.modal .modal-body .btn.activated {
+	background-position: right 12px;	
+}
+
 .modal-content .col-md-3.col-xs-12 .modal-expires {
 	margin-bottom:8px;	
 }
 
 .sliderModal .row.retailer_row {
 	padding:10px 0px;	
+}
+
+#wfccmodal .btn-back {
+	padding-bottom:18px;
+	line-height:1.6;	
 }
 
 }
@@ -2852,6 +2870,10 @@ footer div:last-child {
 #global_navigation #share {
 	width:22.5%;	
 }	
+
+.modal .modal-body .btn.activated {
+	background-position: 73% 12px;	
+}
 }
 
 /*Tiles*/
