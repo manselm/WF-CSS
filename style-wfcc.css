@@ -709,7 +709,7 @@ input.search:-ms-input-placeholder {
 #offers1 .tile .bottom_section .retailer_name {
 	font-weight:bold;
 	display:inline-block;
-	width:auto;
+	xwidth:auto;
 	max-width:150px;
 	vertical-align:top;
 }
@@ -1318,9 +1318,9 @@ footer div:last-child {
 	font-weight:bold;	
 }
 
-.modal-content p.small {
-	font-size:15px;	
-}
+.modal-content p.small  {
+	font-size:15px;
+}	
 
 .modal-content .retailer_name,
 .modal-content span.offer {
@@ -1510,6 +1510,11 @@ footer div:last-child {
 	display:block;
 }
 
+.modal .modal-body {
+	max-height:525px;
+	overflow-y:auto;
+}
+
 /* Terms Modal */
 
 .modal .georgia {
@@ -1619,6 +1624,13 @@ footer div:last-child {
 
 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
 	bottom:-58px;	
+}
+
+/* Safari 7.1+ (8.0 is the latest version of Safari at this time) */
+
+_::-webkit-full-page-media, _:future, :root .bx-wrapper .bx-pager,
+_::-webkit-full-page-media, _:future, :root .bx-wrapper .bx-controls-auto {
+	bottom:-52px;
 }
 
 .anon .bx-wrapper .bx-pager, .anon .bx-wrapper .bx-controls-auto {
@@ -2015,6 +2027,13 @@ nav.navbar {
 	xwidth:144px;		
 }
 
+/* Safari 7.1+ (8.0 is the latest version of Safari at this time) */
+
+_::-webkit-full-page-media, _:future, :root .bx-wrapper {
+	max-width:945px !important;
+}
+
+
 #offers2 .nav-tabs>li {
 	width:49%;	
 }
@@ -2095,11 +2114,11 @@ input.search {
 	xmargin:16px 0px 0px 8px;	
 }
 
-.sort_by .dropdown_label {
+#gridviewoptions .in-store_sort_by li:first-child {
 	vertical-align:bottom;	
 }
 
-#gridviewoptions .in-store_sort_by li:first-child {
+.sort_by .dropdown_label {
 	vertical-align:bottom;	
 }
 
@@ -2201,7 +2220,7 @@ h2, h3 {
 
 .btn.activated {
 	background-image:url(|IMAGESRC|/activated_check_mobile.png);
-	background-position:70% 12px;	
+	background-position:91px 12px;	
 }
 
 .btn-lg {
@@ -2747,9 +2766,8 @@ a.star {
 }
 
 .modal-content .retailer_name a.star {
-	margin-left:12px;	
+	margin-right:12px;	
 }
-
 
 /* Map View */
 
@@ -2784,13 +2802,13 @@ footer div:last-child {
 
 /* Lightboxes */
 
-.modal-dialog {
-	width:95%;	
-}
-
 .modal .modal-body {
 	xmax-height:525px;
 	overflow-y:auto;
+}
+
+.modal .modal-body .btn.activated {
+	background-position: 69% 12px;	
 }
 
 .modal-content .retailer_name,
@@ -2799,10 +2817,6 @@ footer div:last-child {
 .modal-content .retailer_img,
 .modal-content .col-md-3.col-xs-12 {
 	text-align:center;	
-}
-
-.modal .modal-body .btn.activated {
-	background-position: right 12px;	
 }
 
 .modal-content .col-md-3.col-xs-12 .modal-expires {
@@ -2869,11 +2883,11 @@ footer div:last-child {
 #global_navigation #use,
 #global_navigation #share {
 	width:22.5%;	
-}	
+}
 
 .modal .modal-body .btn.activated {
 	background-position: 73% 12px;	
-}
+}	
 }
 
 /*Tiles*/
