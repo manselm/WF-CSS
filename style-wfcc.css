@@ -1749,6 +1749,11 @@ _::-webkit-full-page-media, _:future, :root .bx-wrapper .bx-controls-auto {
 }
 
 
+/* Safari 7.1+ (8.0 is the latest version of Safari at this time) */
+
+_::-webkit-full-page-media, _:future, :root .bx-wrapper {
+	max-width:945px !important;
+}
 
 .ui-autocomplete {
 	width:296px !important;
@@ -2025,12 +2030,6 @@ nav.navbar {
 
 #favorites #star_lg img {
 	xwidth:144px;		
-}
-
-/* Safari 7.1+ (8.0 is the latest version of Safari at this time) */
-
-_::-webkit-full-page-media, _:future, :root .bx-wrapper {
-	max-width:945px !important;
 }
 
 
