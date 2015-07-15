@@ -37,30 +37,50 @@ input:focus:-moz-placeholder { color:transparent; } /* Firefox 18- */
 input:focus::-moz-placeholder { color:transparent; } /* Firefox 19+ */
 input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
 
-#top-link-block.affix-top {
-    position: absolute; /* allows it to "slide" up into view */
-    bottom: -82px; /* negative of the offset - height of link element */
-    right: 10px; /* padding from the right side of the window */
+#top-link-block {
+    display: inline-block;
+  height: 88px;
+  width: 88px;
+  border-radius:88px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  z-index:999999;
+  xbox-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  visibility:hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(68, 70, 74, 0.2) url(|IMAGESRC|/top_arrow.png) center center no-repeat;
+	-webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
-#top-link-block.affix {
-    position: fixed; /* keeps it on the bottom once in view */
-    bottom: 18px; /* height of link element */
-    right: 10px; /* padding from the right side of the window */
-	z-index:99999;
-	height:88px;
-	width:88px;
-	border-radius:88px;
-	background-color:#8E8E8E;
-	opacity:.2;
-	text-align:center;
-	line-height:88px;
+#top-link-block.scollup  {
+	-webkit-transform: translate(0,-6em);
+    -moz-transform: translate(0,-6em);
+    -o-transform: translate(0,-6em);
+    -ms-transform: translate(0,-6em);
+    transform: translate(0,-6em);
+	display: inline-block !important;
+	visibility:visible;
 }
 
-#top-link-block.affix a {
-	height:88px;
-	width:88px;
-	display:block;
-	background:url(|IMAGESRC|/top_arrow.png) center center no-repeat;
+@media only screen and (min-width: 768px) {
+  #top-link-block {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #top-link-block {
+    height: 88px;
+    width: 88px;
+    right: 30px;
+    bottom: -88px;
+  }
 }
 
 .btn:focus {
@@ -805,6 +825,7 @@ input.search:-ms-input-placeholder {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;	
+	-ms-text-overflow:ellipsis;
 	display:block;
 	margin:0px auto;
 }
@@ -2096,6 +2117,13 @@ input#search {
 	xwidth:144px;		
 }
 
+#offers1 #favorites .visible-xs {
+	padding: 16px;
+	font-size: 1.7em;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
 #offers2 #search-refine {
 	width:61%;
 }
@@ -2168,33 +2196,13 @@ body {
 	xwidth:768px !important;	
 }
 
-#top-link-block.affix-top {
-    position: absolute; /* allows it to "slide" up into view */
-    bottom: -82px; /* negative of the offset - height of link element */
-    right: 10px; /* padding from the right side of the window */
-}
-#top-link-block.affix {
-    position: fixed; /* keeps it on the bottom once in view */
-    bottom: 18px; /* height of link element */
-    right: 10px; /* padding from the right side of the window */
-	height:56px;
+#top-link-block {
+    height:56px;
 	width:56px;
 	border-radius:56px;
-	background-color:#8E8E8E;
-	opacity:.2;
-	text-align:center;
-	line-height:56px;
-}
-
-#top-link-block.affix a {
-	height:56px;
-	width:56px;
-	display:block;
-	background:url(|IMAGESRC|/top_arrow.png) center center no-repeat;
 	background-size:24px 15px;
+	bottom:-56px;
 }
-
-
 
 #global_navigation ul.nav {
 	margin:0px;
