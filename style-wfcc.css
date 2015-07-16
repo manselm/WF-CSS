@@ -403,10 +403,6 @@ box-shadow: 0 5px 5px 0 #AFB0b0;}
 	margin-top:144px;
 }
 
-#hero .container .vertical-center {
-	display:table-cell; vertical-align:middle;
-}
-
 .slides-navigation a.prev {
 	left:45%;
 }
@@ -418,6 +414,11 @@ box-shadow: 0 5px 5px 0 #AFB0b0;}
 #hero .container {
 	height:100%;
 	display:table;	
+}
+
+#hero .container .vertical-center {
+	display:table-cell; 
+	vertical-align:middle;
 }
 
 #hero .container p.earn-more-mall {
@@ -860,7 +861,7 @@ span.expires {
 
 /* In-Store Anon */
 
-.anon #offers2 #instore #filters,
+.anon #offers2 #instore .filters,
 .anon #offers2 #instore ul.in-store_sort_by {
 	display:none;	
 }
@@ -892,35 +893,35 @@ span.expires {
 	display:none;
 }	
 
-#offers2 #filters {
+#offers2 .filters {
 	background-color:#f9f9f9;
 	margin-top:21px;
 	width:255px;
 	margin-left:-22px;
 }
 
-.anon #offers2 #filters {
+.anon #offers2 .filters {
 	margin-top:0px;
 }
 
-#filters .list-group {
+.filters .list-group {
 	padding:11px 8px;
 	font-size:0.778em;
 	margin-bottom:41px;	
 }
 
-#filters .list-group span#results {
+.filters .list-group span#results {
 	font-weight:bold;
 	border:none;	
 	xmargin-bottom:16px;
 }
 
-#filters .tab-pane .row:first-child {
+.filters .tab-pane .row:first-child {
 	margin-left:0px;	
 	margin-right:0px;
 }
 
-#filters .list-group h3.list-group-item {
+.filters .list-group h3.list-group-item {
 	font-size:1.143em;
 	color:#AE257B;
 	border:none;
@@ -928,7 +929,7 @@ span.expires {
 	padding:13px 0px 13px 15px;
 }
 
-#filters .list-group h3.list-group-item .reset {
+.filters .list-group h3.list-group-item .reset {
 	font-family:"Verdana",Verdana,sans-serif !important;
 	margin-top:3px;
 	font-weight:bold;
@@ -938,15 +939,15 @@ span.expires {
 	text-decoration:none;
 }
 
-#filters .list-group a#edit_zip {
+.filters .list-group a#edit_zip {
 	background:url(|IMAGESRC|/pencil.png) center right no-repeat;
 }
 
-#refine #filters .list-group  {
+#refine .filters .list-group  {
 	font-size:1em;	
 }
 
-#filters .list-group .list-group-item {
+.filters .list-group .list-group-item {
 	border-width:1px 0px 1px 0px;
 	padding:13px 15px;
 }
@@ -2397,6 +2398,12 @@ h2, h3 {
 	touch-action: pan-x pan-y !important;
 }
 
+#hero .container p.earn-more-mall {
+	font-size:12px;
+	color:#44464a;
+	font-style:normal;
+}	
+
 #hero img {
 	opacity:.3;	
 }
@@ -2570,7 +2577,7 @@ input#search {
 #offers2 .nav-tabs {
 	margin:0px;	
 }
-#offers2 #filters {
+#offers2 .filters {
 	display:none;	
 }
 
