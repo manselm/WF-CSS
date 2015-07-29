@@ -788,9 +788,10 @@ input.search:-ms-input-placeholder {
 	padding:16px 0px;
 }
 
-.tile .bottom_section .retailer_name {
+.tile .bottom_section .retailer_name,
+.center .v-align a .no_logo {
 	font-weight:bold;
-	max-width: 220px;
+	max-width: 210px;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;	
@@ -1631,7 +1632,8 @@ _::-webkit-full-page-media, _:future, :root .bx-wrapper .bx-controls-auto {
 	bottom:40px;
 }
 
-.center .v-align a .no_logo {
+.center .v-align a .no_logo,
+.center .v-align a img {
 	font-size:17px !important;
 }
 
