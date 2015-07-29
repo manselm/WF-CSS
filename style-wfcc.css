@@ -1857,7 +1857,7 @@ nav.navbar {
 .slides-pagination,
 .slide-navigation
  {
-	bottom:9% !important;	
+	bottom:13% !important;	
 }
 
 #offers1,
@@ -2829,6 +2829,10 @@ footer div:last-child {
 	line-height:1.6;	
 }
 
+#terms_modal .modal-body {
+	overflow-x:hidden;	
+}
+
 }
 
 @media screen and (min-width: 866px) and (max-width: 991px) { 
@@ -2873,8 +2877,13 @@ footer div:last-child {
 
 
 @media screen and (max-width: 375px) {
+#global_navigation ul.nav {
+	min-width:320px;	
+}
+	
 #global_navigation #my_rewards {
 	width:32.5%;
+	min-width:103px;
 }
 #global_navigation #earn,
 #global_navigation #use,
