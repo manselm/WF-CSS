@@ -68,7 +68,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
 	visibility:visible;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   #top-link-block {
     right: 20px;
     bottom: 20px;
@@ -412,13 +412,7 @@ box-shadow: 0 5px 5px 0 #AFB0b0;}
 }
 
 #hero .container {
-	height:100%;
-	display:table;	
-}
-
-#hero .container .vertical-center {
-	display:table-cell; 
-	vertical-align:middle;
+	marign-top:6%;
 }
 
 #hero .container p.earn-more-mall {
@@ -874,11 +868,6 @@ span.expires {
 }
 
 .anon #offers2 #onlineOffersContainer {
-	overflow:hidden;	
-}
-
-.anon #offers2 #onlineOffersContainer .row {
-	min-width:400px;
 	overflow:hidden;	
 }
 
@@ -1355,7 +1344,7 @@ footer div:last-child {
 
 .modal .modal_expires {
 	color:#ae2573;
-	font-weight:bold;	
+	font-weight:bold;
 }
 
 #language .modal-body,
@@ -1856,7 +1845,7 @@ nav.navbar {
 }
 
 #hero {
-	height:400px;
+	height:420px;
 }
 
 #hero .container {
@@ -2394,22 +2383,33 @@ h2, h3 {
 	border-radius: 0px;
 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-	margin-top:98px;	
+	margin-top:113px;	
 	touch-action: pan-x pan-y !important;
 }
 
 #hero .container p.earn-more-mall {
 	font-size:12px;
-	color:#44464a;
-	font-style:normal;
+	color:#bb0826;
+	xfont-style:normal;
+	xmargin-bottom:16px;
 }	
+
+#hero .container h1 {
+	margin-top:8px;	
+}
 
 #hero img {
 	opacity:.3;	
 }
 
 #hero .container {
-	margin-top:10%;	
+	height:100%;
+	display:table;	
+}
+
+#hero .container .vertical-center {
+	display:table-cell; 
+	vertical-align:middle;
 }
 
 #hero .container h1, #hero .container p {
@@ -2442,11 +2442,6 @@ h2, h3 {
   margin: 20px 0 0 auto;
   padding: 0;
   list-style: none;
-}
-
-#hero .container .vertical-center {
-  display: table-cell;
-  vertical-align: middle;
 }
 
 #hero .container p>.btn {
@@ -2528,15 +2523,27 @@ input#search {
 	width:100%;	
 }
 
+.modal .modal_expires {
+	display:block;
+	margin:0px auto 16px;	
+}
+
 #search_group_mobile {
 	float:left;	
-	padding-left:8px;
-	width:75% !important;
+	margin-left:8px;
+	width:70% !important;
+	border-radius:2px;
+	border:2px solid #CFD1D7;
+}
+
+input.search,
+#search_group_mobile .btn {
+	border-width:0px;	
 }
 
 #offers2 #btn_refine {
 	margin-right:8px;
-	height:51px;
+	height:55px;
 	margin-left:0px;
 }
 
