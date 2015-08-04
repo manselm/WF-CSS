@@ -108,9 +108,14 @@ input:focus {
 }
 
 .btn {
-	border-radius:2px;
+	border-radius:4px;
 	padding-top:7px;
-	padding-bottom:7px;	
+	padding-bottom:7px;
+}
+
+.btn-primary,
+.btn-info {
+	padding:10px 44px;	
 }
 
 .btn-lg {
@@ -542,6 +547,10 @@ opacity:1 !important;
 	top:105%;	
 }
 
+.bx-pager-item a.bx-pager-link {
+	position:inherit;	
+}
+
 /* Search Input */
 
 #search_group input:focus {
@@ -681,6 +690,8 @@ input.search:-ms-input-placeholder {
 	padding:20px 18px;
 	border-radius:2px;
 }
+
+.tooltip { z-index: 1000 !important}
 
 #offers1 .tile {
 	height:284px;	
@@ -1635,6 +1646,7 @@ _::-webkit-full-page-media, _:future, :root .bx-wrapper .bx-controls-auto {
 .center .v-align a .no_logo,
 .center .v-align a img {
 	font-size:17px !important;
+	line-height:1.6;
 }
 
 .nav-tabs>li {
@@ -2055,6 +2067,8 @@ input#search {
 	margin-top:0px;	
 	display:inline-block;
 	vertical-align:top;
+	padding-right:12px;
+	padding-left:12px;
 }
 }
 
@@ -2123,7 +2137,8 @@ input.search {
 	display:none;	
 }
 
-.bx-controls-direction {
+.bx-controls-direction .bx-prev,
+.bx-controls-direction .bx-next {
 	display:none;	
 }
 
@@ -2141,11 +2156,18 @@ input.search {
 	width:95%;	
 }
 
-.sliderModal .row.retailer_row div.col-md-4.col-sm-4 strong {
+.sliderModal .row.retailer_row div.col-md-4.col-sm-4 strong,
+.center .v-align a img  {
 	white-space:nowrap;
 	overflow:hidden;
 	text-overflow:ellipsis;
 	max-width:164px;	
+}
+
+.center .v-align a .no_logo {
+	white-space:normal;
+	max-width:133px;	
+	font-size:12px;
 }
 
 }
@@ -2816,6 +2838,19 @@ footer div:last-child {
 	text-align:center;	
 }
 
+.modal-content .retailer_name, .modal-content span.offer {
+	font-size:18px;	
+}
+
+.modal-content p.small,
+.modal-content .terms p b:first-child {
+	font-size:12px;	
+}
+
+.modal-content .retailer_name a.star {
+	margin-left:8px;
+}
+
 .modal-content .col-md-3.col-xs-12 .modal-expires {
 	margin-bottom:8px;	
 }
@@ -2831,6 +2866,11 @@ footer div:last-child {
 
 #terms_modal .modal-body {
 	overflow-x:hidden;	
+}
+
+#timeout_prompt .btn-primary {
+	padding-left:12px;
+	padding-right:12px;	
 }
 
 }
@@ -2893,6 +2933,10 @@ footer div:last-child {
 
 .modal .modal-body .btn.activated {
 	background-position: 73% 12px;	
+}
+
+.modal .modal-body {
+	max-height:385px;
 }	
 }
 
