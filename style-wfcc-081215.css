@@ -272,7 +272,7 @@ box-shadow: 0 5px 5px 0 #AFB0b0;}
 #global_navigation .dropdown-menu>li { 
 	display: table-cell;
 	border-right:1px solid #E0E2E3;
-	height:135.5px;	
+	height:144px;	
 }
 
 #global_navigation .nav > li.dropdown .dropdown-menu {
@@ -284,16 +284,15 @@ box-shadow: 0 5px 5px 0 #AFB0b0;}
 	color:#8F8F8F;
 	font-size:16px;
 	border:none;
-	padding:12.5px 0px;
+	padding:0px;
 	cursor:pointer;
 }
 
-#global_navigation .dropdown-menu>li.active a:hover,
 #global_navigation .dropdown-menu>li a:hover,
 #global_navigation .dropdown-menu>li a:focus,
 #global_navigation .dropdown-menu>li.subnav_links ul li a:hover {
 	color:#000;
-	background:#F3F4F3;
+	background:transparent;
 	text-decoration:none;
 }
 
@@ -429,30 +428,26 @@ box-shadow: 0 5px 5px 0 #AFB0b0;}
 	margin-top:144px;
 }
 
-.slides-pagination a {
-	position:initial;	
-}
-
 .slides-navigation a.prev,
 .slides-navigation a.next {
-	background-color:#FFF;
-	padding:8px 10px;
-	background-position:center center;	
-	height:43px;
-	width:43px;
-	z-index:4;
+	xposition:absolute;	
+}
+
+.slides-pagination {
+	xposition:initial;	
+}
+
+.slides-pagination a {
+	xposition:inherit;	
 }
 
 .slides-navigation a.prev {
 	left:45%;
-	border-radius:4px 0px 0px 4px;
 }
 
 .slides-navigation a.next {
 	right:45%;
-	border-radius:0px 4px 4px 0px;
 }
-
 
 #hero .container {
 	marign-top:6%;
@@ -583,10 +578,6 @@ opacity:1 !important;
 
 .bx-wrapper .bx-controls-direction a {
 	top:105%;	
-}
-
-.bx-wrapper .bx-controls-direction a:focus {
-	outline:1px dotted #000;	
 }
 
 .bx-pager-item a.bx-pager-link {
@@ -1312,17 +1303,9 @@ footer div:last-child {
 	color:#FFF;
 }
 
-.modal-header h4 {
-	font-weight:bold;
-}
-
 .modal-content .modal-header {
 	border-bottom:none;	
 	min-height:67px;
-}
-
-.modal-header h4.text-center {
-	margin-left:35px;	
 }
 
 .modal-footer {
@@ -1417,8 +1400,7 @@ footer div:last-child {
 }
 
 #timeout_prompt .modal-footer {
-	text-align:center;
-	border:none;	
+	text-align:center;	
 }
 
 .modal-body p a {
@@ -2739,8 +2721,8 @@ input.search,
 }
 
 #offers1 .bx-viewport {
-	xmargin-left:8px;
-	xmargin-right:8px;	
+	padding-left:8px;
+	padding-right:8px;	
 }
 
 #gridviewoptions .in-store_sort_by li:last-child {
@@ -2913,10 +2895,6 @@ footer div:last-child {
 	margin:0px;	
 }
 
-.modal-header h4.text-center {
-	margin:0px 0px 0px 20px;	
-}
-
 .modal-content .close {
 	height:20px;
 	width:20px;
@@ -2927,13 +2905,8 @@ footer div:last-child {
 .modal-content span.offer,
 .modal-content p.small,
 .modal-content .retailer_img,
-.modal-content .col-md-3.col-xs-12,
-.modal-content .instore_address {
+.modal-content .col-md-3.col-xs-12 {
 	text-align:center;	
-}
-
-.modal-content .no_logo {
-	min-height:50px;	
 }
 
 .modal-content .retailer_name, .modal-content span.offer {
@@ -3025,14 +2998,7 @@ footer div:last-child {
 
 @media screen and (min-width: 480px) and (max-width: 758px) {
 .bx-wrapper {
-	max-width:468px !important;
-}
-
-}
-
-@media screen and (min-width: 320px) and (max-width: 479px) {
-.bx-wrapper {
-	max-width:95% !important;
+	max-width:484px !important;
 }
 
 }
