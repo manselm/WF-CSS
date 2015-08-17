@@ -1464,6 +1464,17 @@ footer div:last-child {
   text-decoration: none;
 }
 
+#terms_article h3.terms.first {
+	margin:0px 0px 16px 0px;
+}
+
+#terms_article h3.terms {
+	margin:0px 0px 16px -40px;
+	font-family:"Verdana",Verdana,sans-serif;
+	font-size:1em;
+	font-weight:bold;
+}
+
 #terms_modal td,
 #terms_article td {
 	padding:10px;	
