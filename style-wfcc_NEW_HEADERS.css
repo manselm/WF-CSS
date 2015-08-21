@@ -532,6 +532,10 @@ opacity:1 !important;
 
 /*	How It Works */
 
+#hiw h2 {
+	font-size:20px;
+}	
+
 #hiw .col-md-4 {
 	margin-top:64px;	
 }
@@ -1003,7 +1007,7 @@ a.star.active {
 	margin-right:0px;
 }
 
-.filters .list-group h3.list-group-item {
+.filters .list-group h2.list-group-item {
 	font-size:1.143em;
 	color:#AE257B;
 	border:none;
@@ -1011,7 +1015,7 @@ a.star.active {
 	padding:13px 0px 13px 15px;
 }
 
-.filters .list-group h3.list-group-item .reset {
+.filters .list-group h2.list-group-item .reset {
 	font-family:"Verdana",Verdana,sans-serif !important;
 	margin-top:3px;
 	font-weight:bold;
@@ -1335,7 +1339,7 @@ footer div:last-child {
 
 /* Lightboxes */
 
-.modal h4 {
+.modal h1 {
 	font-size: 1.300em;	
 }
 
@@ -1349,7 +1353,7 @@ footer div:last-child {
 	color:#FFF;
 }
 
-.modal-header h4 {
+.modal-header h1 {
 	font-weight:bold;
 }
 
@@ -1358,7 +1362,7 @@ footer div:last-child {
 	min-height:67px;
 }
 
-.modal-header h4.text-center {
+.modal-header h1.text-center {
 	margin-left:35px;	
 }
 
@@ -1484,17 +1488,17 @@ footer div:last-child {
 	outline:none;	
 }
 
-.modal h4 a.faq_links {
+.modal h2 a.faq_links {
   color: #44464a;
 }
 
 #wfccmodal .faq_link,
-.modal h4 a.faq_links {
+.modal h2 a.faq_links {
 	background:url(|IMAGESRC|/faq_arrow_up.png) center right no-repeat;
 }
 
 #wfccmodal .faq_link.collapsed,
-.modal h4 a.faq_links.collapsed {
+.modal h2 a.faq_links.collapsed {
 	background:url(|IMAGESRC|/faq_arrow_down.png) center right no-repeat;
 }
 
@@ -1689,7 +1693,7 @@ h3.terms {
 	font-size:0.833em;	
 }
 
-#offers2 h2 {
+#offers2 h1 {
 	padding-left:36px;	
 }
 
