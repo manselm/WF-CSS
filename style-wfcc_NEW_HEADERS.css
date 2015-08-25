@@ -499,7 +499,7 @@ box-shadow: 0 5px 5px 0 #AFB0b0;}
   font-family: Georgia, serif;
   font-size: 30px;
   color: #bb0826;
-  font-style:italic;	
+  xfont-style:italic;	
 }
 
 #hero .container h1,
@@ -1363,7 +1363,8 @@ footer div:last-child {
 }
 
 .modal-header h1.text-center {
-	margin-left:35px;	
+	margin-left:35px;
+	margin-top:8px;	
 }
 
 .modal-footer {
@@ -1707,11 +1708,11 @@ h3.terms {
 }
 
 .slides-navigation {
-	top: 322px;
+	top: 367px;
 }
 
 .slides-pagination {
-	bottom:360px;	
+	bottom:315px;	
 }
 
 /* Non Auth Targeted Pane */
@@ -1988,10 +1989,8 @@ nav.navbar {
 	margin-top:10%;	
 }
 
-.slides-pagination,
-.slide-navigation
- {
-	bottom:13% !important;	
+.slides-pagination {
+	bottom:10px;	
 }
 
 #offers1,
@@ -2679,7 +2678,7 @@ input#search {
 	xmargin-left:22px;	
 }
 
-#offers2 h2,
+#offers2 h1,
 input#search {
 	margin-left:8px;	
 }
@@ -2709,6 +2708,11 @@ input#search {
 input.search,
 #search_group_mobile .btn {
 	border-width:0px;	
+}
+
+#offers2 h1 {
+	font-size:1.250em;
+	font-weight:bold;	
 }
 
 #offers2 #btn_refine {
@@ -2986,16 +2990,19 @@ footer div:last-child {
 }	
 
 .modal-title,
-.modal-header h4 {
+.modal-header h4,
+.modal-header h1 {
 	font-size:15px;
 	line-height:21px;
 }
 
-.modal-header h4 {
+.modal-header h4,
+.modal-header h1 {
 	margin:0px;	
 }
 
-.modal-header h4.text-center {
+.modal-header h4.text-center,
+.modal-header h1.text-center {
 	margin:0px 0px 0px 20px;	
 }
 
