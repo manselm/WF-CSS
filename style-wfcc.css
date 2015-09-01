@@ -19,11 +19,12 @@ body {
 }
 
 #skipnav.sr-only {
-	position:inherit;	
+	xposition:inherit;	
 }
 
 #skipnav {
-	position:absolute;	
+	position:absolute;
+	z-index:99999;	
 }
 
 @font-face{
@@ -502,7 +503,7 @@ box-shadow: 0 5px 5px 0 #AFB0b0;}
   xfont-style:italic;	
 }
 
-#hero .container h1,
+#hero .container h2,
 #hero .container p {
 	margin-left:24px;
 	width:60%;
@@ -725,7 +726,6 @@ input.search:-ms-input-placeholder {
 
 .ui-autocomplete li {
 	list-style:none;	
-	
 }
 
 .ui-menu {
@@ -1007,6 +1007,7 @@ a.star.active {
 	margin-right:0px;
 }
 
+.filters .list-group h3.list-group-item,
 .filters .list-group h2.list-group-item {
 	font-size:1.143em;
 	color:#AE257B;
@@ -1015,6 +1016,7 @@ a.star.active {
 	padding:13px 0px 13px 15px;
 }
 
+.filters .list-group h3.list-group-item .reset,
 .filters .list-group h2.list-group-item .reset {
 	font-family:"Verdana",Verdana,sans-serif !important;
 	margin-top:3px;
@@ -1690,7 +1692,7 @@ h3.terms {
 	margin-top:4%;
 }
 
-#hero h1 {
+#hero h2 {
 	font-size:2.778em;	
 }
 
@@ -2112,7 +2114,7 @@ nav.navbar {
 	margin-top:22px;	
 }
 
-#hero .container h1, #hero .container p {
+#hero .container h2, #hero .container p {
 	width:56%;	
 }
 
@@ -2595,7 +2597,7 @@ h2, h3 {
 	vertical-align:middle;
 }
 
-#hero .container h1, #hero .container p {
+#hero .container h2, #hero .container p {
 	width:auto;
 	text-align:center;
 	margin-left:0px;	
@@ -2684,7 +2686,7 @@ input#search {
 	xmargin-left:22px;	
 }
 
-#offers2 h1,
+#offers2 h2,
 input#search {
 	margin-left:8px;	
 }
