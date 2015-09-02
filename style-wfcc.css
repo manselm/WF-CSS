@@ -2564,6 +2564,10 @@ h2, h3 {
 	xbackground-color: #D7D3C7;
 }
 
+.memb #hero {
+	margin-top:137px;	
+}
+
 #slides {
 	touch-action: pan-x pan-y !important;
 }
@@ -2601,6 +2605,11 @@ h2, h3 {
 	width:auto;
 	text-align:center;
 	margin-left:0px;	
+}
+
+#hero .container h2 {
+	font-size:26px;
+	font-weight:500;	
 }
 
 .slides-navigation {
