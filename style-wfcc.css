@@ -93,6 +93,10 @@ input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
     right: 30px;
     bottom: -88px;
   }
+  
+#mapviewcontainer a .no_logo {
+	max-width:190px;	
+}
 }
 
 .btn:focus {
@@ -481,11 +485,11 @@ box-shadow: 0 5px 5px 0 #AFB0b0;}
 /* 3 Banners */
 
 .slides-navigation a.prev {
-	left:43%;
+	left:42%;
 }
 
 .slides-navigation a.next {
-	right:43%;
+	right:42%;
 }
 
 .slides-pagination {
@@ -783,7 +787,7 @@ input.search:-ms-input-placeholder {
 }
 
 #offers1 .tile .bottom_section {
-	height:132px;	
+	height:150px;	
 }
 
 
@@ -1620,6 +1624,13 @@ h3.terms {
 	display:block;
 }
 
+.sliderModal .retailer_row .col-md-9 .row .col-md-4 strong {
+	overflow:hidden;
+	max-width:180px;
+	text-overflow:ellipsis;
+	white-space:normal;
+}
+
 .modal .modal-body {
 	max-height:525px;
 	overflow-y:auto;
@@ -1637,17 +1648,18 @@ h3.terms {
 	padding-right:14px;	
 }
 
-.modal .modal-footer .terms_collapse {
+.modal .terms_collapse {
 	color:#44464a;
 	padding-right:32px;
 	background:url(|IMAGESRC|/faq_arrow_up.png) center right no-repeat;	
+	text-decoration:none;
 }
 
-.modal .modal-footer .terms_collapse.collapsed {
+.modal .terms_collapse.collapsed {
 	background:url(|IMAGESRC|/faq_arrow_down.png) center right no-repeat;	
 }
 
-.modal .modal-footer #terms_article {
+.modal #terms_article {
 	color:#000;	
 }
 
@@ -1829,21 +1841,21 @@ _::-webkit-full-page-media, _:future, :root .bx-wrapper .bx-controls-auto {
 
 @media screen and (min-width: 1365px) {
 .slides-navigation a.prev {
-	left:45%;
+	left:44%;
 }
 
 .slides-navigation a.next {
-	right:45%;
+	right:44%;
 }
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1365px) { 
 .slides-navigation a.prev {
-	left:44.6%;
+	left:43%;
 }
 
 .slides-navigation a.next {
-	right:44.6%;
+	right:43%;
 }
 .modal-dialog {
 	width:845px;	
@@ -1853,10 +1865,10 @@ _::-webkit-full-page-media, _:future, :root .bx-wrapper .bx-controls-auto {
 @media screen and (min-width: 992px) and (max-width: 1025px) { 
 
 .slides-navigation a.prev {
-  left: 43%;
+  left: 41%;
 }
 .slides-navigation a.next {
-  right: 43%;
+  right: 41%;
 }
 .modal-dialog {
 	width:845px;	
@@ -2106,6 +2118,10 @@ nav.navbar {
   xmargin: 30px auto;
 }
 
+.sliderModal .retailer_row .col-md-9 .row .col-md-4 strong {
+	max-width:158px;	
+}
+
 #global_navigation .dropdown-menu>li.subnav_links ul {
 	margin:5px 0px 0px 15px;
 }
@@ -2119,11 +2135,11 @@ nav.navbar {
 }
 
 .slides-navigation a.next {
-	right:41%;
+	right:39%;
 }
 
 .slides-navigation a.prev {
-	left:41%;
+	left:39%;
 }
 
 .sliderModal .row.retailer_row {
@@ -2239,9 +2255,7 @@ input#search {
 	width:61%;
 }
 
-input.search {
-	font-size:12px;	
-}
+input { font-size: 16px !important; }
 
 .anon #offers2 #instore #instoreOffersContainer .col-md-9 {
 	min-height:400px;
@@ -2311,6 +2325,10 @@ input.search {
 	max-width:164px;	
 }
 
+.center .v-align a img  {
+	max-height:50px;
+}	
+
 .center .v-align a .no_logo {
 	white-space:normal;
 	max-width:133px;	
@@ -2326,8 +2344,6 @@ input.search {
 body {
 	font-size:12px;
 }
-
-input { font-size: 16px !important; }
 
 .container {
 	xwidth:768px !important;	
@@ -2661,7 +2677,9 @@ div.merchant_logos {
 
 /* Offer Areas */
 
-
+#offers1 .tile .bottom_section {
+	height:132px;	
+}
 
 #offers1,
 #offers2 {
@@ -2991,6 +3009,11 @@ footer div:last-child {
 }
 
 /* Lightboxes */
+
+
+.sliderModal .row.retailer_row div.col-md-4.col-sm-4 strong {
+	display:block;	
+}
 
 .modal .modal-body {
 	xmax-height:525px;
