@@ -513,17 +513,21 @@ box-shadow: 0 5px 5px 0 #AFB0b0;}
 	width:60%;
 }
 
+#hero .container p {
+	width:50%;
+}
+
 #hero .container div.merchant_logos {margin-left:24px;}
 #hero .container ul {margin:0;padding:0;list-style:none;}
 #hero .container ul li {float:left;margin-right:15px;margin-bottom:15px;}
 
-#hero .container img.retailer_img {
+#hero .container img.retailer_img,
+#hero .container img.campaign_logo {
 max-width:90px !important;
 max-height:50px !important;
 position:inherit !important;
 opacity:1 !important;
 }
-
 
 /* Main Content */
 
@@ -797,6 +801,10 @@ input.search:-ms-input-placeholder {
 
 #offers1 .tile .bottom_section .retailer_name {
 	font-weight:bold;
+}
+
+#offers1 .tile .bottom_section .retailer_name,
+#offers1 .tile .bottom_section .offer {
 	display:inline-block;
 	xwidth:auto;
 	max-width:150px;
@@ -888,9 +896,14 @@ input.search:-ms-input-placeholder {
 	padding:16px 0px;
 }
 
-.tile .bottom_section .retailer_name,
+.tile .bottom_section .retailer_name, 
 .center .v-align a .no_logo {
 	font-weight:bold;
+}
+
+.tile .bottom_section .retailer_name,
+.center .v-align a .no_logo,
+.tile .bottom_section .offer {
 	max-width: 210px;
 	white-space: nowrap;
 	overflow: hidden;
@@ -2222,6 +2235,16 @@ input#search {
 /* Medium/Tablet */
 
 @media screen and (max-width: 768px) {
+
+#hero .container {
+	margin-top:none;	
+}
+	
+#hero .container .vertical-center {
+	display:table-cell; 
+	vertical-align:middle;
+}
+	
 .navbar-inverse {
 	border-top:4px solid #bb0826;
 }
@@ -2593,7 +2616,7 @@ h2, h3 {
 }
 
 #hero .container p.earn-more-mall {
-	font-size:12px;
+	font-size:1.5em;
 	color:#bb0826;
 	xfont-style:normal;
 	xmargin-bottom:16px;
@@ -2612,11 +2635,6 @@ h2, h3 {
 	display:table;	
 }
 
-#hero .container .vertical-center {
-	display:table-cell; 
-	vertical-align:middle;
-}
-
 #hero .container h2, #hero .container p {
 	width:auto;
 	text-align:center;
@@ -2626,6 +2644,7 @@ h2, h3 {
 #hero .container h2 {
 	font-size:26px;
 	font-weight:500;	
+	margin-top:0px;
 }
 
 .slides-navigation {
@@ -2936,6 +2955,9 @@ input.search,
 
 .tile .bottom_section .retailer_name {
 	font-weight:bold;
+}
+
+.tile .bottom_section .offer {
 	width: 130px;
 }
 
@@ -3128,7 +3150,8 @@ footer div:last-child {
 	max-width:24% !important;	
 }
 
-#offers1 .tile .bottom_section .retailer_name {
+#offers1 .tile .bottom_section .retailer_name,
+#offers1 .tile .bottom_section .offer {
 	max-width: 136px;	
 }
 }
